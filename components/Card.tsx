@@ -9,7 +9,7 @@ const Card = props => {
 
 const styles = StyleSheet.create({
     card: {
-        width: 300,
+        width: 200,
         maxWidth: '80%',
         alignItems: 'center',
         shadowColor: 'black',
