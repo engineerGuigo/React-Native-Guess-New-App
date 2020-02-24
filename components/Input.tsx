@@ -1,17 +1,16 @@
 import React from 'react';
-import { TextInput, StyleSheet } from 'react-native';
+import { TextInput } from 'react-native';
+import styled from 'styled-components/native';
 
 const Input = props => {
-    return <TextInput {...props} style={{ ...styles.input, ...props.style }} />;
+    return <StyledTextInput {...props} style={{ ...props.style }} />;
 };
 
-const styles = StyleSheet.create({
-    input: {
-        height: 30,
-        borderBottomColor: 'grey',
-        borderBottomWidth: 1,
-        marginVertical: 10
-    }
-});
+const StyledTextInput = styled.TextInput`
+  height: 30px;
+  border-bottom-color: grey;
+  border-bottom-width: 1px;
+  margin: 10px 0;
+`
 
 export default Input;
